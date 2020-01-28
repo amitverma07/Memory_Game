@@ -16,6 +16,8 @@ If the cards match,the card stay flipped over.
 If the card do not match, player select other card which is flipped face down.
 The game ends once all cards have been correctly matched.
 
+![srceen shot](https://raw.githubusercontent.com/amitverma07/Memory_Game/master/Capture.PNG)
+
 # Technical
 This project consists of the following assets:
 
