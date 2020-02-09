@@ -1,73 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css" />
-    <title>MatchemUp</title>
-  </head>
-  <body>
-    <h1><span>MITT</span>Match</h1>
-    <div class="main-container">
-      <main>
-        <section class="scoreboard">
-          <div class="left-nav">
-            Next Card:
-            <div id="next-card"><i class="fas fa-anchor"></i></div>
-          </div>
-          <div class="right-nav">
-            <div class="score-container">
-              Your Score:
-              <span id="score">3</span>
+
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>MITT MATCH</h1>
+        </header>
+
+        <section class="score-panel">
+            <ul class="stars">
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+            </ul>
+
+            <span class="moves">0 Moves</span>
+
+            <div class="timer">
+                <i class="fa fa-clock-o"></i>
+                <span class="hour"> 00</span> :
+                <span class="minute"> 00</span> :
+                <span class="seconds"> 00</span>
             </div>
+
             <div class="restart">
-              <i class="fas fa-redo"></i>
-              Restart Game
+                <i class="fa fa-repeat"></i>
             </div>
-          </div>
         </section>
-        <ul id="cards">
-          <li class="card">
-            <i class="fas fa-atom"></i>
-          </li>
-          <li class="card">
-            <i class="fas fa-frog"></i>
-          </li>
-          <li class="card">
-            <i class="fas fa-feather-alt"></i>
-          </li>
-          <li class="card matched">
-            <i class="fas fa-cogs"></i>
-          </li>
-          <li class="card">
-            <i class="fas fa-anchor"></i>
-          </li>
-          <li class="card">
-            <i class="fas fa-fan"></i>
-          </li>
-          <li class="card">
-            <i class="fas fa-bolt"></i>
-          </li>
-          <li class="card matched">
-            <i class="fas fa-hat-wizard"></i>
-          </li>
-          <li class="card show">
-            <i class="fas fa-apple-alt"></i>
-          </li>
-          <li class="card">
-            <i class="fas fa-bell"></i>
-          </li>
-          <li class="card">
-            <i class="fas fa-bomb"></i>
-          </li>
-          <li class="card">
-            <i class="fas fa-brain"></i>
-          </li>
-        </ul>
-      </main>
+
+        <main id="cards-board">
+
+        </main>
+
     </div>
+
+    <div class="modal">
+
+        <div class="modal-box">
+            <h1>Congratulations</h1>
+            <p>You made it in :
+                <span class='time-modal'></span>
+                <br> Your rating is :
+                <span class='rating-modal'> </span>
+                <br> Moves:
+                <span class='moves-modal'> </span>
+            </p>
+            <button class="btn-modal">Restart Game</button>
+        </div>
+    </div>
+    <hr>
+    <footer class="footer">
+        <p>Coded by:
+            <a href="https://amitverma07.github.io/Memory_Game/"> Amit Verma</a>.</p>
+    </footer>
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>
